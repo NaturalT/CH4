@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 
 # Process
@@ -42,26 +43,53 @@ def flux_prep(filename,H_or_D):
         return(filename + "\\" + filename[(start_point+ 8):(index_insert+4)] + "HH_"+ filename[(index_insert+4):]+".csv")
 
 
+class Fluxnet_db:
+    def __init__(self):
+        self.HH_df = {}
+        self.DD_df = {}
+        self.stations = []
+    def add_to_list(self,list):
+                    list.append(self)
+                    # print('Added!')
+
+    def add_to_Dict(self,keyname,dict):
+                dict[keyname] = self
+
+    def apply_across_all_dfs(self,function):
+        # temp = self.HH_df
+        for attr, value in self.HH_df.items():
+            self.HH_df[attr] = function(value)
+        for attr, value in self.DD_df.items():
+            self.DD_df[attr] = function(value)
+# gfg_csv_data = df.to_csv('GfG.csv', index = True)
+    def save_dfs_as_csv(self):
+        for attr, value in self.HH_df.items():
+            value.to_csv((attr+"_HH.csv"))
+        for attr, value in self.DD_df.items():
+            value.to_csv((attr+"_DD.csv"))
+
+
+
+                
+
+Fluxnet_db = Fluxnet_db()
+def fluxnet_dataframe_gather(location_list): 
+    for station in location_list:
+        # start_point = station.find("Fluxnet\\")
+        station_name = station[12:18]
+        print(station_name+ " read into df")
+        Fluxnet_db.HH_df[station_name] = pd.read_csv(flux_prep(station,"H"))
+        Fluxnet_db.HH_df[station_name]["Station"] = station_name
+
+        Fluxnet_db.DD_df[station_name] = pd.read_csv(flux_prep(station,"D"))
+        Fluxnet_db.DD_df[station_name]["Station"] = station_name
 #Step 2
 
-
-
-
 #Fluxnet
-print(flux_prep("Fluxnet\FLX_FI-Hyy_FLUXNET-CH4_2016-2016_1-1","H"))
 
-# data = pd.read_csv('path/to/your/file.csv')
-fi_hyy_data = pd.read_csv(flux_prep("Fluxnet\FLX_FI-Hyy_FLUXNET-CH4_2016-2016_1-1","H"))
+fluxnet_dataframe_gather(fluxnet_ch4_file_locations)
 
-print(fi_hyy_data.head())  # Display the first few rows of the DataFrame
-print(fi_hyy_data.info())  # Show the information about the DataFrame
-
-
-
-
-
-
-
+# Fluxnet_db.HH_df["FI-Hyy"].info()
 
 #STEP 3
 
@@ -175,55 +203,54 @@ def flux_format(dataframe):
             # print(header+" was not found in header dictionary")
     return dataframe
 
-flux_format(fi_hyy_data)
-fi_hyy_data.info() # Show the information about the DataFrame
+# flux_format(fi_hyy_data)
+# fi_hyy_data.info() # Show the information about the DataFrame
 
-print(iterative_flux_search_rename( "FCH4_F_ANNOPTLM_QC", "FCH4", "", "FCH4"))
+# print(iterative_flux_search_rename( "FCH4_F_ANNOPTLM_QC", "FCH4", "", "FCH4"))
 
-# for key in header_dict:
-#     print(key)
+# Fluxnet_db.apply_across_all_dfs(flux_format)
 
+# Fluxnet_db.HH_df["FI-Hyy"].info()
 
-                #     dataframe.columns.str.replace(header,header_dict[key])
-                #     break
-                # elif header == (key +"_F"):
-                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
-                #     break
-                # elif header == (key +"_DT"):
-                #     dataframe.columns.str.replace(header,header_dict[key]+"_lr_curve_estimate")
-                #     break
-                # elif header == (key +"_NT"):
-                #     dataframe.columns.str.replace(header,header_dict[key]+"_night_data_estimate")
-                #     break
-                # elif header == (key +"_F"):
-                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
-                #     break
-                # elif header == (key +"_F"):
-                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
-                #     break
-                # elif header == (key +"_F"):
-                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
-                #     break
-                # elif header == (key +"_F"):
-                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
-                #     break
+        # tmp = tmp.reindex(index=Dict[sensor].data_frame.index)
+# df['date'] = pd.to_datetime(df['date'],unit='s')
+# datetime.fromisoformat(isoformat_date)
+
+def format_time_and_set_time_index(dataframe):
+    def int_to_dt(inty):
+        str_ver = str(inty)
+        if len(str_ver) == 12:
+            str_ver = str_ver[:4] + "-" + str_ver[4:6]+ "-" +str_ver[6:8] + "T"+str_ver[8:10]+":"+ str_ver[10:]
+        if len(str_ver) == 8:
+            str_ver = str_ver[:4] + "-" + str_ver[4:6]+ "-" +str_ver[6:] 
+        return(str_ver)
+        
+
+    dataframe[list(dataframe.columns)[0]] = dataframe[list(dataframe.columns)[0]].apply(int_to_dt)
+    dataframe[list(dataframe.columns)[0]] = dataframe[list(dataframe.columns)[0]].apply(datetime.fromisoformat)
+
+    # dataframe[list(dataframe.columns)[0]] = datetime.fromisoformat(    dataframe[list(dataframe.columns)[0]]  )
 
 
 
+    dataframe[list(dataframe.columns)[1]] = dataframe[list(dataframe.columns)[1]].apply(int_to_dt)
+    dataframe[list(dataframe.columns)[1]] = dataframe[list(dataframe.columns)[1]].apply(datetime.fromisoformat)
+    # dataframe = dataframe.reindex(index= dataframe[list(dataframe.columns)[0]])
+
+    return dataframe
+
+    # dataframe[list(dataframe.columns)[1]] = datetime.fromisoformat(    dataframe[list(dataframe.columns)[1]]   )
 
 
+Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
 
+Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
 
+Fluxnet_db.HH_df["FI-Hyy"].info()
 
-    #     delinquents.append(header)
-    # for delinquent in delinquents:
-    #     for key in header_dict:
-    #         if delinquent == (key +"_F"):
-    #            dataframe.columns.str.replace(header,header_dict[key])
-    #             break 
+Fluxnet_db.save_dfs_as_csv()
 
-
-
+    
             
                 
 

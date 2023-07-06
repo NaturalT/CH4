@@ -1,0 +1,87 @@
+# print(flux_prep("Fluxnet\FLX_FI-Hyy_FLUXNET-CH4_2016-2016_1-1","H"))
+
+# data = pd.read_csv('path/to/your/file.csv'
+
+
+# print(fi_hyy_data.head())  # Display the first few rows of the DataFrame
+# print(fi_hyy_data.info())  # Show the information about the DataFrame
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for key in header_dict:
+#     print(key)
+
+
+                #     dataframe.columns.str.replace(header,header_dict[key])
+                #     break
+                # elif header == (key +"_F"):
+                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
+                #     break
+                # elif header == (key +"_DT"):
+                #     dataframe.columns.str.replace(header,header_dict[key]+"_lr_curve_estimate")
+                #     break
+                # elif header == (key +"_NT"):
+                #     dataframe.columns.str.replace(header,header_dict[key]+"_night_data_estimate")
+                #     break
+                # elif header == (key +"_F"):
+                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
+                #     break
+                # elif header == (key +"_F"):
+                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
+                #     break
+                # elif header == (key +"_F"):
+                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
+                #     break
+                # elif header == (key +"_F"):
+                #     dataframe.columns.str.replace(header,header_dict[key]+"_gap_filled")
+                #     break
+
+
+
+
+
+
+
+
+    #     delinquents.append(header)
+    # for delinquent in delinquents:
+    #     for key in header_dict:
+    #         if delinquent == (key +"_F"):
+    #            dataframe.columns.str.replace(header,header_dict[key])
+    #             break 
+
