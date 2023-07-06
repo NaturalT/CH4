@@ -242,7 +242,7 @@ def format_time_and_set_time_index(dataframe):
     # dataframe[list(dataframe.columns)[1]] = datetime.fromisoformat(    dataframe[list(dataframe.columns)[1]]   )
 
 
-Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
+Fluxnet_db.apply_across_all_dfs(flux_format)
 
 Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
 
