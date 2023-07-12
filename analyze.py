@@ -47,6 +47,7 @@ class Fluxnet_db:
     def __init__(self):
         self.HH_df = {}
         self.DD_df = {}
+        self.aggregate = pd.DataFrame()
         self.stations = []
     def add_to_list(self,list):
                     list.append(self)
@@ -61,6 +62,71 @@ class Fluxnet_db:
             self.HH_df[attr] = function(value)
         for attr, value in self.DD_df.items():
             self.DD_df[attr] = function(value)
+
+
+    def imprint_identity_across_all_dfs(self):
+        for attr, value in self.HH_df.items():
+            station = attr
+            columns ={}
+            
+
+            # print(value.columns)
+            # print(list(value.columns))
+
+
+            for header in (list(value.columns))[2:]:
+                columns[header] = station+ '_'+header
+            self.HH_df[attr] = value.rename(columns=columns)
+
+        for attr, value in self.DD_df.items():
+            station = attr
+            columns ={}
+
+            # print(value.columns)
+            # print(list(value.columns))
+
+
+            for header in (list(value.columns))[2:]:
+                columns[header] = station+ '_'+header
+            self.DD_df[attr] = value.rename(columns=columns)
+
+    # def final_extraction(dataframe):
+    #     all_Sensor_dfs = []
+    #     unfiltered = extract_from_sensor(Grand_Dict,'data_frame')
+    #     for sensor_df in unfiltered: 
+    #         if len(sensor_df) == 0:
+    #             pass
+    #         else:
+    #             all_Sensor_dfs.append(sensor_df)
+    #     final_df = pandas.DataFrame(index = all_Sensor_dfs[0].index)
+    #     for i in range(0, len(sensors)):
+    #         final_df = final_df.merge(Dict[sensors[i]].data_frame, how ='outer',right_index= True,left_on='timestamp')
+    #         # print('processing...')
+    #     return final_df
+
+
+    def flux_aggregate():
+        for attr, value in self.HH_df.items():
+            # value = df.drop((list(value.columns))[0], axis='columns')
+            if counter == 0:
+                self.aggregate = value
+            else:
+                self.aggregate = self.aggregate.merge(value, how= "outer", right_index = True, on = self.aggregate.index ) 
+            
+# need full outer join!!
+
+
+
+            # print(value.columns)
+            # print(list(value.columns))
+
+
+        for header in (list(value.columns))[2:]:
+                columns[header] = station+ '_'+header
+        self.HH_df[attr] = value.rename(columns=columns)
+
+
+
 # gfg_csv_data = df.to_csv('GfG.csv', index = True)
     def save_dfs_as_csv(self):
         for attr, value in self.HH_df.items():
@@ -77,12 +143,13 @@ def fluxnet_dataframe_gather(location_list):
     for station in location_list:
         # start_point = station.find("Fluxnet\\")
         station_name = station[12:18]
+        Fluxnet_db.stations.append(station_name)
         print(station_name+ " read into df")
         Fluxnet_db.HH_df[station_name] = pd.read_csv(flux_prep(station,"H"))
-        Fluxnet_db.HH_df[station_name]["Station"] = station_name
+        # Fluxnet_db.HH_df[station_name]["Station"] = station_name
 
         Fluxnet_db.DD_df[station_name] = pd.read_csv(flux_prep(station,"D"))
-        Fluxnet_db.DD_df[station_name]["Station"] = station_name
+        # Fluxnet_db.DD_df[station_name]["Station"] = station_name
 #Step 2
 
 #Fluxnet
@@ -236,19 +303,27 @@ def format_time_and_set_time_index(dataframe):
     dataframe[list(dataframe.columns)[1]] = dataframe[list(dataframe.columns)[1]].apply(int_to_dt)
     dataframe[list(dataframe.columns)[1]] = dataframe[list(dataframe.columns)[1]].apply(datetime.fromisoformat)
     # dataframe = dataframe.reindex(index= dataframe[list(dataframe.columns)[0]])
+    dataframe = dataframe.set_index(list(dataframe.columns)[0])
+
 
     return dataframe
 
     # dataframe[list(dataframe.columns)[1]] = datetime.fromisoformat(    dataframe[list(dataframe.columns)[1]]   )
 
 
+
+
 Fluxnet_db.apply_across_all_dfs(flux_format)
 
 Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
 
+Fluxnet_db.imprint_identity_across_all_dfs()
+
 Fluxnet_db.HH_df["FI-Hyy"].info()
 
-Fluxnet_db.save_dfs_as_csv()
+Fluxnet_db.HH_df["FI-Hyy"].head()
+
+# Fluxnet_db.save_dfs_as_csv()
 
     
             
