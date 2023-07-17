@@ -1,0 +1,2926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="doi:10.18739/A2DN3ZX1R" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="https://doi.org">
+  <dataset>
+    <title>BAWLD-CH4: Methane Fluxes from Boreal and Arctic Ecosystems</title>
+    <creator id="3557316559027222">
+      <individualName>
+        <givenName>McKenzie</givenName>
+        <surName>Kuhn</surName>
+      </individualName>
+      <organizationName>University of Alberta</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <deliveryPoint>Dept. of Renewable Resources, University of Alberta</deliveryPoint>
+        <deliveryPoint>South Academic Building, 348D</deliveryPoint>
+        <city>Edmonton</city>
+        <administrativeArea>Alberta</administrativeArea>
+        <postalCode>T6G 2G7</postalCode>
+        <country>Canada</country>
+      </address>
+      <phone phonetype="voice">6266586290</phone>
+      <electronicMailAddress>kuhn.mckenzie@gmail.com</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-3871-1548</userId>
+    </creator>
+    <creator id="8461959149064588">
+      <individualName>
+        <givenName>Ruth</givenName>
+        <surName>Varner</surName>
+      </individualName>
+      <organizationName>University of New Hampshire and the Bolin Centre for Climate Research</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <city>Durham</city>
+        <administrativeArea>New Hampshire</administrativeArea>
+        <postalCode>03824</postalCode>
+        <country>United States of America</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-3571-6629</userId>
+    </creator>
+    <creator id="4253460260196440">
+      <individualName>
+        <givenName>David</givenName>
+        <surName>Bastviken</surName>
+      </individualName>
+      <organizationName>Linköping University</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <city>Linköping</city>
+        <postalCode>581 83</postalCode>
+        <country>Sweden</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-0038-2152</userId>
+    </creator>
+    <creator id="6740374866685961">
+      <individualName>
+        <givenName>Patrick</givenName>
+        <surName>Crill</surName>
+      </individualName>
+      <organizationName>Stockholm University and the Bolin Centre for Climate Research</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <city>Stockholm</city>
+        <country>Sweden</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-1110-3059</userId>
+    </creator>
+    <creator id="9047760123586652">
+      <individualName>
+        <givenName>Sally</givenName>
+        <surName>MacIntyre</surName>
+      </individualName>
+      <organizationName>University of California at Santa Barbara</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <country>United States of America</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-3644-7237</userId>
+    </creator>
+    <creator id="4847727716585244">
+      <individualName>
+        <givenName>Merritt</givenName>
+        <surName>Turetsky</surName>
+      </individualName>
+      <organizationName>University of Colorado Boulder</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <city>Boulder</city>
+        <administrativeArea>Colorado</administrativeArea>
+        <country>United States of America</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-0155-8666</userId>
+    </creator>
+    <creator id="5282405191603116">
+      <individualName>
+        <givenName>Katey</givenName>
+        <surName>Anthony</surName>
+      </individualName>
+      <organizationName>University of Alaska Fairbanks</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <city>Fairbanks</city>
+        <administrativeArea>Alaska</administrativeArea>
+        <postalCode>99775-5860</postalCode>
+        <country>United Sates of America</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-2079-2896</userId>
+    </creator>
+    <creator id="3520065536572871">
+      <individualName>
+        <givenName>David</givenName>
+        <surName>McGuire</surName>
+      </individualName>
+      <organizationName>University of Alaska Fairbanks</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <city>Fairbanks</city>
+        <administrativeArea>Alaska</administrativeArea>
+        <postalCode>99775-5860</postalCode>
+        <country>United Sates of America</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-4646-0750</userId>
+    </creator>
+    <creator id="1884929583235202">
+      <individualName>
+        <givenName>David</givenName>
+        <surName>Olefeldt</surName>
+      </individualName>
+      <organizationName>University of Alberta</organizationName>
+      <positionName>Creator</positionName>
+      <address>
+        <deliveryPoint>Dept. of Renewable Resources, University of Alberta</deliveryPoint>
+        <deliveryPoint>South Academic Building, 348D</deliveryPoint>
+        <city>Edmonton</city>
+        <administrativeArea>Alberta</administrativeArea>
+        <postalCode>T6G 2G7</postalCode>
+        <country>Canada</country>
+      </address>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-5976-1475</userId>
+    </creator>
+    <pubDate>2021</pubDate>
+    <abstract>
+      <para>These are the data files for the Boreal-Arctic Wetland and Lake Database methane (CH4) flux dataset (BAWLD-CH4). The dataset is a synthesis of reported methane fluxes from natural ecosystems in the Boreal-Arctic region. The dataset is split into two components- 1) terrestrial methane fluxes (wetland and non-wetland) and 2) aquatic methane fluxes (lakes and ponds). BAWLD-CH4 was constructed in parallel with a compatible land cover dataset (Olefeldt et al. 2021) sharing the same land cover classes to enable refined bottom-up assessments of annual CH4 emissions from the Boreal-Arctic region. BAWLD-CH4 includes information on site-level, surface CH4 fluxes, but also on study design (measurement method, timing, and frequency) and site characteristics (vegetation, climate, hydrology, soil, and sediment types, permafrost conditions, lake size and depth, and BAWLD land cover class). For more details on the variables collected see the Metadata files.</para>
+      <para>The following files are provided:</para>
+      <para>1) BAWLD_CH4_Terrestrial (.csv file). This file includes the data for terrestrial methane fluxes and associated variables </para>
+      <para>2) BAWLD_CH4_Aquatic (.csv file). This file includes the data for aquatic methane fluxes and associated variables</para>
+    </abstract>
+    <keywordSet>
+      <keyword>methane</keyword>
+      <keyword>north</keyword>
+      <keyword>wetlands</keyword>
+      <keyword>lakes</keyword>
+      <keyword>flux</keyword>
+      <keyword>emissions</keyword>
+      <keyword>aquatic</keyword>
+      <keyword>arctic</keyword>
+      <keyword>boreal</keyword>
+      <keyword>synthesis</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>This work is dedicated to the public domain under the Creative Commons Universal 1.0 Public Domain Dedication. To view a copy of this dedication, visit https://creativecommons.org/publicdomain/zero/1.0/.</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url>http://doi.org/doi:10.18739/A2DN3ZX1R</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Boreal-Arctic biomes as defined by Olson et al. 2001 (https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2). The southern boundary moves but is approximately 55 degrees north.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>45</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2021</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2021</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact id="5281599686341940">
+      <individualName>
+        <givenName>McKenzie</givenName>
+        <surName>Kuhn</surName>
+      </individualName>
+      <organizationName>University of Alberta</organizationName>
+      <positionName>Creator- project lead</positionName>
+      <address>
+        <deliveryPoint>Dept. of Renewable Resources, University of Alberta</deliveryPoint>
+        <deliveryPoint>South Academic Building, 348D</deliveryPoint>
+        <city>Edmonton</city>
+        <administrativeArea>Alberta</administrativeArea>
+        <postalCode>T6G 2G7</postalCode>
+        <country>Canada</country>
+      </address>
+      <electronicMailAddress>kuhn.mckenzie@gmail.com</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-3871-1548</userId>
+    </contact>
+    <publisher id="8803687292126679">
+      <organizationName>NSF Arctic Data Center</organizationName>
+      <electronicMailAddress>support@arcticdata.io</electronicMailAddress>
+      <onlineUrl>http://arcticdata.io</onlineUrl>
+      <userId directory="unknown">Q77285095</userId>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <para>The terrestrial CH4 flux dataset includes warm season (~May-October depending on the location) fluxes and was compiled using data from studies published before February 2020. We identified new studies using 1) JStore™, Google Scholar™ and Web of Science™ searches with the terms (peatland OR wetland OR bog OR fen OR marsh OR upland) AND (north* OR boreal OR arctic OR sub-arctic) AND (methane OR CH4 OR greenhouse gas*); 2) references from published studies; and 3) contributions of unpublished data. If multiple, yearly CH4 flux and water table measurements were reported from one site or if multiple studies reported fluxes from the same site, the data were entered as separate individual lines and were considered each their own “site.” Sites that underwent manipulations (soil temperature, water table, nutrients, etc) were not included in the dataset, however, any control or undisturbed sites included within manipulation studies were included. Furthermore, sites that have recently undergone disturbance from thermokarst processes were included.  Winter flux measurements from terrestrial sites were excluded from this dataset (winter/ice-out estimates from aquatic ecosystems are included).</para>
+          <para>The terrestrial dataset includes predominantly chamber measurements at the sub-meter scale which allows for a detailed representation of specific land cover types (i.e. one land cover type per chamber measurement). However, a handful of eddy covariance measurements were included if the authors could clearly partition fluxes based on specific land cover classes . For more information on EC-based CH4 synthesis, we direct the readers to the FLUXNET-CH4 Community Product and additional FluxNet resources (fluxnet.org). We grouped chamber measurements from specific studies by “Site”, which we defined as surfaces with similar vegetation composition (dominant, present, absent) and physical characteristics (including water table position, permafrost conditions, organic layer depth, soil moisture, and pH) within proximity to each other (typically 1 – 100 m radius). In most cases, chambers and sites were already classified by these standards, however, sometimes it was necessary to combine or split chamber measurements presented by the authors into our site classifications. By combining and splitting sites this way, we were able to classify sites into BAWLD land cover classes. Average daily warm season fluxes were then calculated from the average CH4 flux from each site over the study’s measurement period.</para>
+          <para>In addition to CH4 flux data, we extracted various site descriptors and categorical and continuous environmental variables (See Metadata for more information). For all sites, we included information on the site name (Site), location (LatDec/LongDec, Country), the months measurements were taken (SampMonths), the flux measurement method (Meth), the author’s description of the site (SiteDescrip), and vegetation composition. Most studies did not classify land cover types with similar BAWLD criteria, therefore we assigned BAWLD land cover classifications. Permafrost zone was assigned according to Brown et al. (1998). When reported, we also extracted continuous variables including Mean Annual Air Temperature (MAAT), Mean Annual Precipitation (MAP), growing season length, Net Ecosystem Productivity (NEP), Ecosystem Respiration (ER), Gross Ecosystem Photosynthesis (GPPPer), air temperature (TPer), soil temperature at 0-5 cm (TSoilA) and at 5-25 cm (TSoilB), water table depth (WTAv), organic layer depth (Org), active layer depth (AL), pH, and soil moisture (SoilMoist), all averaged over the same period as the flux measurements. The categorical variables collected include absence or presence of permafrost within the top two meters (PfConA), permafrost thaw (PfTh), and vegetation composition (absent, present, dominant) for graminoid (Carex spp. and Eriophorum spp; referred to as “Sedge” in the dataset), sphagnum moss (Sphag), non-sphagnum moss (Moss), tree, and shrub species. Vegetation composition of the functional plant type was considered dominant if that type made up greater than 50% of the reported biomass or areal coverage or was one of only two species present at the site.  Trees were assigned as the dominant vegetation type if the canopy was described as closed. Gridded (0.5 by 0.5 degrees) climate variables including mean annual temperature (referred to as GRID_T) and mean annual precipitation (CD_Pcp_An) were extracted from WorldClim2 (http://www.worldclim.com/version2).</para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>The aquatic dataset includes ice-free season (~May-October depending on the location) and winter/ice-out fluxes and was compiled using data from studies published before February 2020. We identified new studies using 1) JStore™, Google Scholar™ and Web of Science™ searches with the terms (lake* OR pond*) AND (north* OR boreal OR arctic OR sub-arctic) AND (methane OR CH4 OR greenhouse gas*); 2) references from published studies; and 3) contributions of unpublished data. If multiple, yearly measurements were given for one site by the same study, we averaged the flux values. If different studies reported fluxes from the same lake then these data were reported as separate entries. In instances where open-water fluxes and storage/ice-out fluxes were reported for the same lake, those data were entered on separate lines, but the number of lakes was designated as NA for the winter measurement as to not add to the total lake count. We defined sites based on reported average CH4 fluxes. For example, some studies reported one average flux value for a group of lakes and this was considered one “site,” however the number of lakes was noted.  Studies that only reported CH4 concentrations and not a flux estimate were not included.</para>
+          <para>Similar to the terrestrial dataset, the aquatic dataset focuses on small-scale measurement techniques that allow for flux estimates to be attributed to one specific land cover class. Therefore ice-free season diffusive fluxes included in this dataset were measured using dissolved CH4 concentrations and modeling approaches or floating chambers, while ebullitive fluxes were measured by bubble trap or floating chamber. We classified all EC fluxes as diffusive fluxes as it is hard to separate between ebullition and diffusion within this measurement technique. We further delineated aquatic fluxes by transport pathway including ebullition (bubbles), diffusion (hydrodynamic flux), and winter storage/ice-out flux. Ebullition and diffusion measurements were averaged over the ice-free season to represent a mean daily flux estimate across a lake. In some cases, if measurements were only taken from one zone of the lake (i.e. just lake edge or just lake center) we averaged these and assumed whole-lake fluxes. Some studies only reported a seasonal ice-free flux estimate. If they also reported the number of days in the ice-free season we then calculated the average daily flux rate. Storage flux includes the annual release of CH4 that accumulates within and under the ice over the winter and also includes estimates from ice bubble surveys (IBS). Our storage flux estimate does not include estimates of spring or fall circulation fluxes, wherein CH4 that is stored in the deep portion of the water column is released upon season turnover of the water column. We also include an estimate of the ice-free season ebullition and diffusive fluxes if provided by the authors or if the authors provided the number of ice-free days. Note that flux measurements that include the transport of CH4 through littoral vascular plants were not included as aquatic fluxes, but as marsh or wet tundra fluxes within the terrestrial dataset.</para>
+          <para>In addition to aquatic CH4 flux data, we also collected various site descriptors and categorical and continuous environmental variables (see Metadata for more information). For all sites we extracted information about the site name and location (latitude/longitude and country), the number of lakes for a reported flux estimate, sampling season (SEASON) and within lake sampling location (E.LOCATION), sampling pathway (PATHWAY), the general sampling dates (YEAR/MONTH) and the number of times sampled (D.DAYS/E.DAYS). When available, we added a column for the equation used to estimate the gas transfer velocity constant (K) using modeling approaches (K600_EQ). Categorical variables included lake sediment type (BOTTOM), permafrost zone (PERMA.ZONE), presence of talik (TALIK), ecoregion (ECOREGION), and the original lake sediment types outlined by Wik et al. (2016; DOI: 10.1038/NGEO2578) (LAKE.TYPE). BAWLD specific categorical variables include the overarching lake genesis type (TYPE), binned water body size (SIZE), and BAWLD land cover class (CLASS). When reported, we extracted the following continuous variables: surface area (SA), water body depth (DEPTH), water temperature (TEMP), dissolved organic carbon concentration (DOC), and pH. Gridded (0.5 by 0.5 degrees) climate variables including mean annual temperature (referred to as GRID_T) and mean annual precipitation (CD_Pcp_An) were extracted from WorldClim2 (http://www.worldclim.com/version2).</para>
+        </description>
+      </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>The geographical extent includes the Boreal-Arctic biomes as defined by Olson et al. 2001 (https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2). The southern boundary movies but is approximately 55 degrees north.</para>
+            <para>Each site (row of data) includes information on the site location and the sampling frequency for that specific site.</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para>No sampling description provided.</para>
+        </samplingDescription>
+      </sampling>
+    </methods>
+    <project>
+      <title>Collaborative Research: Permafrost Carbon Network: Synthesizing flux observations for benchmarking model projections of permafrost carbon exchange</title>
+      <personnel>
+        <individualName>
+          <givenName>Christina</givenName>
+          <surName>Schaedel</surName>
+        </individualName>
+        <role>coPrincipalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Edward A</givenName>
+          <surName>Schuur</surName>
+        </individualName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <award>
+        <funderName>National Science Foundation</funderName>
+        <funderIdentifier>https://doi.org/10.13039/100000001</funderIdentifier>
+        <awardNumber>1931333</awardNumber>
+        <title>Collaborative Research: Permafrost Carbon Network: Synthesizing flux observations for benchmarking model projections of permafrost carbon exchange</title>
+        <awardUrl>https://www.nsf.gov/awardsearch/showAward?AWD_ID=1931333</awardUrl>
+      </award>
+    </project>
+    <dataTable id="urn-uuid-2cd142bd-c4e3-4d0e-91e5-e67dab0e46ad" system="https://tools.ietf.org/html/rfc4122">
+      <entityName>BAWLD_CH4_Terrestrial.csv</entityName>
+      <entityDescription>This file includes the data for terrestrial methane fluxes and associated variables</entityDescription>
+      <physical>
+        <objectName>BAWLD_CH4_Terrestrial.csv</objectName>
+        <size unit="bytes">204165</size>
+        <authentication method="MD5">dfbabe748961df7b1445a880f2be0f75</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:2cd142bd-c4e3-4d0e-91e5-e67dab0e46ad</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="entity_terrestrial_attribute_refid">
+          <attributeName>RefID</attributeName>
+          <attributeLabel>Reference ID</attributeLabel>
+          <attributeDefinition>Number ID attached in independent publications</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Identity">http://purl.dataone.org/odo/ECSO_00001157</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_database">
+          <attributeName>Dataset</attributeName>
+          <attributeLabel>Data entry source</attributeLabel>
+          <attributeDefinition>Data entered originally included by Olefeldt et al doi: 10.1111/gcb.12071) or new data entered by Kuhn et al. All entries were updated to include additional information not include originally by Olefeldt et al. 2012.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Olefeldt</code>
+                    <definition>Entry from Olefeldt et al. 2012</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Kuhn</code>
+                    <definition>Entry from Kuhn et al. </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="data source">http://purl.dataone.org/odo/ECSO_00002744</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>Reference</attributeName>
+          <attributeDefinition>Author name and year published</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_latdec">
+          <attributeName>LatDec</attributeName>
+          <attributeLabel>Latitude</attributeLabel>
+          <attributeDefinition>Coordinates given by the authors in decimal degrees</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="latitude coordinate">http://purl.dataone.org/odo/ECSO_00002130</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_longdec">
+          <attributeName>LongDec</attributeName>
+          <attributeLabel>Longitude</attributeLabel>
+          <attributeDefinition>Coordinates given by the authors in decimal degrees</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="longitude coordinate">http://purl.dataone.org/odo/ECSO_00002132</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_site">
+          <attributeName>Site </attributeName>
+          <attributeLabel>Site Name</attributeLabel>
+          <attributeDefinition>Names of general site location/s provided by the authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="study location name">http://purl.dataone.org/odo/ECSO_00002768</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_siteid">
+          <attributeName>SiteID</attributeName>
+          <attributeLabel>Shortened SiteID</attributeLabel>
+          <attributeDefinition>An abbreviated version of the site name</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="site identifier">http://purl.dataone.org/odo/ECSO_00002997</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>Country</attributeName>
+          <attributeDefinition>Country where the research took place</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_id">
+          <attributeName>ID</attributeName>
+          <attributeLabel>Measurement location ID</attributeLabel>
+          <attributeDefinition>Name of the individual plot or subsite where the measurement took place</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="plot identifier">http://purl.dataone.org/odo/ECSO_00002432</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_ecosystem">
+          <attributeName>Ecosystem</attributeName>
+          <attributeDefinition>Short name for the ecosytem type described by the authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="type of ecosystem">http://purl.dataone.org/odo/ECSO_00003033</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>SiteDescrip</attributeName>
+          <attributeLabel>Site Description</attributeLabel>
+          <attributeDefinition>A description of the site given by the authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_class">
+          <attributeName>Class</attributeName>
+          <attributeLabel>Landcover Class</attributeLabel>
+          <attributeDefinition>BAWLD Landcover classification</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Bog</code>
+                    <definition>Bog</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Fen</code>
+                    <definition>Fen</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PermWet</code>
+                    <definition>Tundra Wetland</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UpTundra</code>
+                    <definition>Upland Tundra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PermBog</code>
+                    <definition>Permafrost Bog </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Boreal</code>
+                    <definition>Boreal Forest </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="type of land cover">http://purl.dataone.org/odo/ECSO_00002664</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>ShoulderSeason</attributeName>
+          <attributeLabel>Shoulder Season</attributeLabel>
+          <attributeDefinition>Are measurements from a should season reported in this study? Note_ shoulder season measurements were not included in the average fluxes calculated for this database. This column is for future reference if needed</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>yes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code> N</code>
+                    <definition>no</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_seas">
+          <attributeName>Seas</attributeName>
+          <attributeLabel>Season/s</attributeLabel>
+          <attributeDefinition>In what seasons are measurements reported for this study</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>T</code>
+                    <definition>Thaw season/spring</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>Summer/warm-season </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>F</code>
+                    <definition>Fall/autumn </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="season">http://purl.dataone.org/odo/ECSO_00002366</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>Year.P</attributeName>
+          <attributeLabel>Publication Year</attributeLabel>
+          <attributeDefinition>Year the study was published</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_years">
+          <attributeName>Years</attributeName>
+          <attributeLabel>Measurement year/s</attributeLabel>
+          <attributeDefinition>Year/s the fieldwork took place</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="year of measurement">http://purl.dataone.org/odo/ECSO_00002050</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_sampledays">
+          <attributeName>SampleDays</attributeName>
+          <attributeLabel>Sampling Days</attributeLabel>
+          <attributeDefinition>Number of days that measurements were taken</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>nominalDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="days elapsed">http://purl.dataone.org/odo/ECSO_00002123</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>Month.Numbers</attributeName>
+          <attributeLabel>Number of months that sampling took place over</attributeLabel>
+          <attributeDefinition>The span of months in which sampling occurred. For example, if sampling took place in June and July then the number of months would be 2</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>nominalMonth</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_sampmonths">
+          <attributeName>SampMonths</attributeName>
+          <attributeLabel>Sampling Months</attributeLabel>
+          <attributeDefinition>The months that sampling took place in</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Jn</code>
+                    <definition>June</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>M</code>
+                    <definition>May</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>J</code>
+                    <definition>July</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>August </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>September </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>O</code>
+                    <definition>October </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="month of year">http://purl.dataone.org/odo/ECSO_00002047</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>Meth</attributeName>
+          <attributeLabel>Flux Method</attributeLabel>
+          <attributeDefinition>Methane flux measurement method</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>C</code>
+                    <definition>Chamber</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>E</code>
+                    <definition>Eddy covariance</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>C/E</code>
+                    <definition>Chamber and eddy covariance reported, but chamber value chosen</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Concentration gradient </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Coll</attributeName>
+          <attributeLabel>Collars</attributeLabel>
+          <attributeDefinition>Number of collars used to estimate the average methane flux at a site</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Occ</attributeName>
+          <attributeLabel>Occasions</attributeLabel>
+          <attributeDefinition>Number of times a flux was measured at an individual collar</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_growsl">
+          <attributeName>GrowSL</attributeName>
+          <attributeLabel>Growing Season Length</attributeLabel>
+          <attributeDefinition>Length of the growing season in days as reported by the authors</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>nominalDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="days elapsed">http://purl.dataone.org/odo/ECSO_00002123</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_ch4an">
+          <attributeName>CH4An</attributeName>
+          <attributeLabel>Annual methane emissions</attributeLabel>
+          <attributeDefinition>Annual methane emissions in grams of CH4 per meter square per year as reported by the authors</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramsPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>log.CH4</attributeName>
+          <attributeLabel>Log Daily methane emissions</attributeLabel>
+          <attributeDefinition>Log daily average methane emissions in miligrams CH4 per meter square per day</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerMeterSquaredPerDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>CH4.Pos</attributeName>
+          <attributeLabel>Daily methane emissions + 5 to be converted to log values</attributeLabel>
+          <attributeDefinition>Daily methane emissions + 5, used to calculated log values. In milligrams CH4 per meter square per day</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerMeterSquaredPerDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_ch4av">
+          <attributeName>CH4Av</attributeName>
+          <attributeLabel>Average daily methane emissions</attributeLabel>
+          <attributeDefinition>Average warm-season methane emissions in milligrams CH4 per meter square per day</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerMeterSquaredPerDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_ch4md">
+          <attributeName>CH4Md</attributeName>
+          <attributeLabel>Median daily methane emission</attributeLabel>
+          <attributeDefinition>Median warm-season emission, if reported by the authors, in milligrams CH4 per meter square per day</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerMeterSquaredPerDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_ch4mx">
+          <attributeName>CH4Mx</attributeName>
+          <attributeLabel>Max daily methane emission</attributeLabel>
+          <attributeDefinition>max methane emission over the warm-season, if reported by the authors, in milligrams CH4 per meter square per day</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerMeterSquaredPerDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_nepper">
+          <attributeName>NEPPer</attributeName>
+          <attributeLabel>Net Ecosystem Primary Productivity</attributeLabel>
+          <attributeDefinition>Net ecosystem primary productivity over the warm-season in grams carbon per meter square per year</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Annual Net Primary Productivity Flux">http://purl.dataone.org/odo/ECSO_00000037</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_erper">
+          <attributeName>ERPer</attributeName>
+          <attributeLabel>Ecosystem Respiration</attributeLabel>
+          <attributeDefinition>Ecosystem respiration in grams carbon per meter square per year</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramsPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Respiration Carbon Flux">http://purl.dataone.org/odo/ECSO_00000016</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>GEPPer</attributeName>
+          <attributeLabel>Gross Ecosystem Productivity</attributeLabel>
+          <attributeDefinition>Gross ecosystem productivity over the warm-season in grams carbon per meter square per year</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramsPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_maat">
+          <attributeName>MAAT</attributeName>
+          <attributeLabel>Mean Annual Temperature</attributeLabel>
+          <attributeDefinition>Mean Annual Temperature reported by the authors</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Temperature Measurement Type">http://purl.dataone.org/odo/ECSO_00001104</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_map">
+          <attributeName>MAP</attributeName>
+          <attributeLabel>Mean Annual Precipitation</attributeLabel>
+          <attributeDefinition>Meant Annual Precipitation reported by the authors in millimeters per year</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>millimetersPerYear</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Precipitation Rate">http://purl.dataone.org/odo/ECSO_00001162</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_tper">
+          <attributeName>TPer</attributeName>
+          <attributeLabel>Air Temperature</attributeLabel>
+          <attributeDefinition>Reported air temperature at the time of the methane measurement</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Air Temperature">http://purl.dataone.org/odo/ECSO_00001225</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_avegridtemp">
+          <attributeName>AveGridTemp</attributeName>
+          <attributeLabel>Gridded Air Temperature</attributeLabel>
+          <attributeDefinition>Average gridded temperature over the growing season months for each study based on the BAWLD gridded monthly air temperatures from WorldClim2</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Air Temperature">http://purl.dataone.org/odo/ECSO_00001225</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_tsoila">
+          <attributeName>TSoilA</attributeName>
+          <attributeLabel>Surface Soil Temperature</attributeLabel>
+          <attributeDefinition>Temperature of the soil in the top 5 centimeters in Celsius</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Soil Temperature">http://purl.dataone.org/odo/ECSO_00001230</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_tsoilb">
+          <attributeName>TsoilB</attributeName>
+          <attributeLabel>Deep Soil Temperature</attributeLabel>
+          <attributeDefinition>The temperature of the soil below 5 - 25 centimeters in Celsius</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Soil Temperature">http://purl.dataone.org/odo/ECSO_00001230</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_tsoildepth">
+          <attributeName>TSoilDepth</attributeName>
+          <attributeLabel>Soil Temperature Depth</attributeLabel>
+          <attributeDefinition>Measurement depth for TsoilB in centimeters, if no deep temp reported, this depth represents TsoilA</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Soil Depth">http://purl.dataone.org/odo/ECSO_00001207</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_wtav">
+          <attributeName>WTAv</attributeName>
+          <attributeLabel>Water Table Average</attributeLabel>
+          <attributeDefinition>Average water table depth over the growing season, positive values represent water above the soil surface</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Water Depth">http://purl.dataone.org/odo/ECSO_00001203</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_wtfit">
+          <attributeName>WTFit</attributeName>
+          <attributeLabel>Water Table Fit</attributeLabel>
+          <attributeDefinition>Fitted water table depth in centimeters- this reported water table depths below 25 as 25</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Water Depth">http://purl.dataone.org/odo/ECSO_00001203</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_wtmax">
+          <attributeName>WTMax</attributeName>
+          <attributeLabel>Water Table Max</attributeLabel>
+          <attributeDefinition>Max (highest) water table depth over the growing season in centimeters, positive values represent water above the soil surface</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Water Depth">http://purl.dataone.org/odo/ECSO_00001203</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_wtmin">
+          <attributeName>WTMin</attributeName>
+          <attributeLabel>Water Table Min</attributeLabel>
+          <attributeDefinition>Minimum (lowest)  water table depth over the warm-season in centimeters, positive values represent water above the soil surface</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Water Depth">http://purl.dataone.org/odo/ECSO_00001203</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>WTFluc</attributeName>
+          <attributeLabel>Water Table Fluctuation</attributeLabel>
+          <attributeDefinition>Fluctuation of the  water table depth over the growing season (range between max and min) in centimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_soilmoist">
+          <attributeName>SoilMoist</attributeName>
+          <attributeLabel>Soil Moisture</attributeLabel>
+          <attributeDefinition>Soil Moisture percentage (%)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>percent</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Soil Moisture Percentage">http://purl.dataone.org/odo/ECSO_00000517</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_soilmoistd">
+          <attributeName>SoilMostD</attributeName>
+          <attributeLabel>Soil Moisture Depth</attributeLabel>
+          <attributeDefinition>Depth the soil moisture was measured in centimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Soil Depth">http://purl.dataone.org/odo/ECSO_00001207</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_org">
+          <attributeName>Org</attributeName>
+          <attributeLabel>Organic Layer Depth</attributeLabel>
+          <attributeDefinition>Thickness of the organic layer in centimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="soil organic layer depth">http://purl.dataone.org/odo/ECSO_00001548</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_al">
+          <attributeName>AL</attributeName>
+          <attributeLabel>Active Layer Depth</attributeLabel>
+          <attributeDefinition>Active layer depth at the time of measurement, in centimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Soil Active Layer Depth">http://purl.dataone.org/odo/ECSO_00001210</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="thaw_depth">
+          <attributeName>Thaw</attributeName>
+          <attributeLabel>Thaw Depth</attributeLabel>
+          <attributeDefinition>Thaw depth at the time of flux sampling in centimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Depth of Thaw">http://www.purl.dataone.org/odo/ECSO_00010114</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>PfReg</attributeName>
+          <attributeLabel>Permafrost Region</attributeLabel>
+          <attributeDefinition>Permafrost region where the study took place. Determined by mapping the cooridnates over Brown et al. 1999- doi: https://doi.org/10.7265/skbg-kf16</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>C</code>
+                    <definition>Continuous </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Discontinuous </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>Sporadic/Isolated</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code> N</code>
+                    <definition>No permafrost </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>PfConA</attributeName>
+          <attributeLabel>Permafrost Presence</attributeLabel>
+          <attributeDefinition>Permafrost present in the top 2 meters, reported by the authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>yes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>no </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>PfTh</attributeName>
+          <attributeLabel>Permafrost Thaw Presence</attributeLabel>
+          <attributeDefinition>Permafrost thaw present, reported by the authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>yes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>no</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_ph">
+          <attributeName>pH</attributeName>
+          <attributeLabel>pH</attributeLabel>
+          <attributeDefinition>The soil pH</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="pH">http://purl.dataone.org/odo/ECSO_00001645</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>Sedge</attributeName>
+          <attributeLabel>Sedge present</attributeLabel>
+          <attributeDefinition>Sedge cover at the site</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Absent</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>Present</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Dominant </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Sphag</attributeName>
+          <attributeLabel>Sphagnum present</attributeLabel>
+          <attributeDefinition>Sphagnum moss cover at the site</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Absent </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>Present </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Dominant </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Moss</attributeName>
+          <attributeLabel>Non-sphagnum moss</attributeLabel>
+          <attributeDefinition>Non-sphagnum moss cover at the site</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Absent</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>Present</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Dominant </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Trees</attributeName>
+          <attributeLabel>Trees present</attributeLabel>
+          <attributeDefinition>Tree cover at the site</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Absent</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>Present </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Dominant </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Shrubs</attributeName>
+          <attributeLabel>Shrubs present</attributeLabel>
+          <attributeDefinition>Shrub cover at the site</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>A</code>
+                    <definition>Absent </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Dominant </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>Present </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_annualtemp">
+          <attributeName>Annual.Temp</attributeName>
+          <attributeLabel>Mean Annual Temperature (gridded)</attributeLabel>
+          <attributeDefinition>Mean Annual Temperature in Celsius for each 0.5 by 0.5 grid cell from WorldClim2- http://www.worldclim.com/version2</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Temperature Measurement Type">http://purl.dataone.org/odo/ECSO_00001104</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_totalid">
+          <attributeName>TotalID</attributeName>
+          <attributeLabel>Unique Total Site ID</attributeLabel>
+          <attributeDefinition>This column combines the Site ID and ID columns. This column identifies measurements from the same site over different years or by different authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="site identifier">http://purl.dataone.org/odo/ECSO_00002997</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_cdpcpan">
+          <attributeName>CD_Pcp_An</attributeName>
+          <attributeLabel>Mean annual precipitation (gridded)</attributeLabel>
+          <attributeDefinition>Gridded (0.5 by 05. degrees) mean annual precipitation in millimeters per year from WorldClim2- http://www.worldclim.com/version2</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Temperature Measurement Type">http://purl.dataone.org/odo/ECSO_00001104</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_terrestrial_attribute_biome">
+          <attributeName>BIOME</attributeName>
+          <attributeLabel>Biome</attributeLabel>
+          <attributeDefinition>Biome as defined by Olson et al. 2001 - https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>11</code>
+                    <definition>Tundra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>Boreal</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="type of biome">http://purl.dataone.org/odo/ECSO_00002727</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="QOOeGIiBxXr4eT1X9WohhJhshFRiNV">
+          <attributeName>DOI</attributeName>
+          <attributeLabel>Digital Object Identifier</attributeLabel>
+          <attributeDefinition>DOI link to the article in which the data was extract from.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+    <dataTable id="urn-uuid-d169e155-9e96-4d8a-a752-0901e1e60448" system="https://tools.ietf.org/html/rfc4122">
+      <entityName>BAWLD_CH4_Aquatic.csv</entityName>
+      <entityDescription>This file includes the data for aquatic methane fluxes and associated variables</entityDescription>
+      <physical>
+        <objectName>BAWLD_CH4_Aquatic.csv</objectName>
+        <size unit="bytes">151005</size>
+        <authentication method="MD5">a046bf53875d077499169d5f8c3b3833</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:d169e155-9e96-4d8a-a752-0901e1e60448</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="entity_aquatic_attribute_id">
+          <attributeName>ID</attributeName>
+          <attributeLabel>Row ID</attributeLabel>
+          <attributeDefinition>Unique identifier for individual rows</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Each number corresponds to a row</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Identity">http://purl.dataone.org/odo/ECSO_00001157</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_num">
+          <attributeName>NUM</attributeName>
+          <attributeLabel>Study number</attributeLabel>
+          <attributeDefinition>Number ID for independent publications</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Each number corresponds to an individual study</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="study identifier">http://purl.dataone.org/odo/ECSO_00002299</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>STUDY</attributeName>
+          <attributeLabel>Reference</attributeLabel>
+          <attributeDefinition>Author name and year published</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_database">
+          <attributeName>DATASET</attributeName>
+          <attributeLabel>Data entry source</attributeLabel>
+          <attributeDefinition>Data entered originally included by Wik et al (DOI: 10.1038/NGEO2578) or new data entered by Kuhn et al. All entries were updated to include additional information not include originally by Wik et al 2016.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>WIK</code>
+                    <definition>Data originally entered by Wik et al. 2016</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KUHN</code>
+                    <definition>Data entered by Kuhn et al. </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="data source">http://purl.dataone.org/odo/ECSO_00002744</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>YEAR</attributeName>
+          <attributeLabel>Publishing year</attributeLabel>
+          <attributeDefinition>Year the study was published</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>COUNTRY</attributeName>
+          <attributeLabel>Country</attributeLabel>
+          <attributeDefinition>Country where the research took place</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_site">
+          <attributeName>SITE</attributeName>
+          <attributeLabel>Lake name</attributeLabel>
+          <attributeDefinition>Name/s of the lakes provided by the authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="lake name">http://purl.dataone.org/odo/ECSO_00002566</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_numberlakes">
+          <attributeName>NUMBER.LAKES</attributeName>
+          <attributeLabel>Number of Lakes</attributeLabel>
+          <attributeDefinition>Number of lakes represented by the average flux value presented</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Count Measurement Type">http://purl.dataone.org/odo/ECSO_00001141</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_lat">
+          <attributeName>LAT</attributeName>
+          <attributeLabel>Latitude</attributeLabel>
+          <attributeDefinition>Site latitude in decimal degrees, provided by the authors</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="latitude coordinate">http://purl.dataone.org/odo/ECSO_00002130</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_long">
+          <attributeName>LONG</attributeName>
+          <attributeLabel>Longitude</attributeLabel>
+          <attributeDefinition>Site longitude in decimal degrees, provided by the authors</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="longitude coordinate">http://purl.dataone.org/odo/ECSO_00002132</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>ECOREGION</attributeName>
+          <attributeLabel>Ecoclimate Region</attributeLabel>
+          <attributeDefinition>Ecoclimatic regions as define by Olson et al. 2001 - https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>CB</code>
+                    <definition>Continental boreal </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SB</code>
+                    <definition>Subarctic boreal </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ST</code>
+                    <definition>Subarctic tundra </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AT</code>
+                    <definition>Arctic tundra </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>PERMA.ZONE</attributeName>
+          <attributeLabel>Permafrost Zone</attributeLabel>
+          <attributeDefinition>Permafrost region where the study took place. Determined by mapping the cooridnates over Brown et al. 1999- doi: https://doi.org/10.7265/skbg-kf16</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>C</code>
+                    <definition>Continuous </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Discontinuous </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>Sporadic/isolated </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No permafrost </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_laketype">
+          <attributeName>LAKE.TYPE</attributeName>
+          <attributeLabel>Lake type (non-BAWLD definition)</attributeLabel>
+          <attributeDefinition>Lake type definitions originally outlined by Wik et al. 2016</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>BP</code>
+                    <definition>Beaver pond</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PP</code>
+                    <definition>Peatland pond</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GP</code>
+                    <definition>Glacial/post-glacial</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>T</code>
+                    <definition>Thermokarst </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Unspecified</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="lake classification">http://purl.dataone.org/odo/ECSO_00002742</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>BOTTOM</attributeName>
+          <attributeLabel>Sediment Type</attributeLabel>
+          <attributeDefinition>Sediment type as described by the authors</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>M</code>
+                    <definition>Minerogenic </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>O</code>
+                    <definition>Organic </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>Peat</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Yedoma</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>U</code>
+                    <definition>Unspecified </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TALIK</attributeName>
+          <attributeLabel>Talik present</attributeLabel>
+          <attributeDefinition>Is a talik present under the lake</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>yes</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>no </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>SA</attributeName>
+          <attributeLabel>Water body surface area</attributeLabel>
+          <attributeDefinition>Surface area in kilometers squared reported by authors or determined by GIS if only the coordinates were given</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>squareKilometers</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_depth">
+          <attributeName>DEPTH</attributeName>
+          <attributeLabel>Waterbody depth</attributeLabel>
+          <attributeDefinition>Water body depth in meters provided by the authors</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Water Depth">http://purl.dataone.org/odo/ECSO_00001203</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_season">
+          <attributeName>SEASON</attributeName>
+          <attributeLabel>Season</attributeLabel>
+          <attributeDefinition>The time of the year the sampling took place. "Winter" includes winter/spring ice surveys and ice-out measurements</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Winter</code>
+                    <definition>Winter emissions and spring ice out </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Ice-free </code>
+                    <definition>Ice-free season emissions </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="season">http://purl.dataone.org/odo/ECSO_00002366</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_years">
+          <attributeName>YEAR.S</attributeName>
+          <attributeLabel>Sampling year(s)</attributeLabel>
+          <attributeDefinition>The year or years the sampling took place</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="year of measurement">http://purl.dataone.org/odo/ECSO_00002050</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_month">
+          <attributeName>MONTH</attributeName>
+          <attributeLabel>Sampling months</attributeLabel>
+          <attributeDefinition>The month or months the sampling took place. The months are written out. In some cases, a range of months is given. For example, June-August represents sampling months of June, July, and August.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="month of year">http://purl.dataone.org/odo/ECSO_00002047</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>PATHWAY</attributeName>
+          <attributeLabel>Transport pathway measured</attributeLabel>
+          <attributeDefinition>The flux transport pathways measured</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>D</code>
+                    <definition>Diffusion</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>E</code>
+                    <definition>Ebullition</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>Winter storage/ice-out</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>DE</code>
+                    <definition>Diffusion and ebullition </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>DS</code>
+                    <definition>Diffusion and storage </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>D.METHOD</attributeName>
+          <attributeLabel>Diffusive measurement method</attributeLabel>
+          <attributeDefinition>The measurement method for diffusive fluxes</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>CH</code>
+                    <definition>Floating chamber</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WS</code>
+                    <definition>Water sample </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ED</code>
+                    <definition>Eddy covariance </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>K600_EQ</attributeName>
+          <attributeLabel>K600 equation</attributeLabel>
+          <attributeDefinition>The equation used to estimate the gas velocity coefficient (K) when calculating diffusive methane emissions</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>K_REF</attributeName>
+          <attributeLabel>K600 reference</attributeLabel>
+          <attributeDefinition>Citation for the k equation used to calculate the diffusive flux</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E.METHOD</attributeName>
+          <attributeLabel>Ebullition measurement method</attributeLabel>
+          <attributeDefinition>The measurement method for ebullitive fluxes</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>BT</code>
+                    <definition>Bubble trap </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WS</code>
+                    <definition>Water sample </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>IS</code>
+                    <definition>Ice survey </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>E.LOCATION</attributeName>
+          <attributeLabel>Ebullition measurement location</attributeLabel>
+          <attributeDefinition>Location within the lake of the reported ebullition measurement</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>C</code>
+                    <definition>Center of the lake </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>E</code>
+                    <definition>Edge of the lake </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>W</code>
+                    <definition>Whole-lake averaged estimate </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>S.METHOD</attributeName>
+          <attributeLabel>Storage method</attributeLabel>
+          <attributeDefinition>The measurement method for storage/Ice-out emissions</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>BT</code>
+                    <definition>Bubble trap </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WS</code>
+                    <definition>Water sample </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>IS</code>
+                    <definition>Ice survey </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_ddays">
+          <attributeName>D.DAYS</attributeName>
+          <attributeLabel>Diffusive measurement days</attributeLabel>
+          <attributeDefinition>The number of individual days diffusion was measured at the same lake</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>nominalDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="days elapsed">http://purl.dataone.org/odo/ECSO_00002123</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_edays">
+          <attributeName>E.DAYS</attributeName>
+          <attributeLabel>Ebullition measurement days</attributeLabel>
+          <attributeDefinition>Total number of days a bubble trap was set to measure ebullition</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>nominalDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="days elapsed">http://purl.dataone.org/odo/ECSO_00002123</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_length">
+          <attributeName>LENGTH</attributeName>
+          <attributeLabel>Field sampling campaign length</attributeLabel>
+          <attributeDefinition>The duration of the field sampling campaign for each lake in days</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>nominalDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="days elapsed">http://purl.dataone.org/odo/ECSO_00002123</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_ch4dflux">
+          <attributeName>CH4.D.FLUX</attributeName>
+          <attributeLabel>Diffusive methane flux</attributeLabel>
+          <attributeDefinition>Mean daily diffusive emissions in milligrams methane per meter square per day</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerMeterSquaredPerDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_ch4eflux">
+          <attributeName>CH4.E.FLUX</attributeName>
+          <attributeLabel>Ebullitive methane emissions</attributeLabel>
+          <attributeDefinition>Mean daily ebullitive emissions in milligrams methane per meter square per day</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerMeterSquaredPerDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_seasonaldiffflux">
+          <attributeName>Seasonal.Diff.Flux</attributeName>
+          <attributeLabel>Seasonal diffusive emission</attributeLabel>
+          <attributeDefinition>Total diffusive emissions over the season in grams methane per meter square per year. Only included if the authors reported this value or the number of ice-free days</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_seasonalebul">
+          <attributeName>Seasonal.Ebul</attributeName>
+          <attributeLabel>Seasonal Ebullitive Emissions</attributeLabel>
+          <attributeDefinition>Total ebullitive emissions over the season in grams methane per meter square per year. Only included if the authors reported this value</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Methane Flux">http://purl.dataone.org/odo/ECSO_00000582</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>Seasonal.Storage</attributeName>
+          <attributeLabel>Seasonal Storage/iceout</attributeLabel>
+          <attributeDefinition>Below ice methane storage released upon ice-out in the spring in grams methane per meter square per year.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>IBS</attributeName>
+          <attributeLabel>Ice Bubble Storage Emissions</attributeLabel>
+          <attributeDefinition>Ice-bubble methane storage released upon ice-out in spring in grams methane per meter square per year.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gramPerMeterSquaredPerYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_temp">
+          <attributeName>TEMP</attributeName>
+          <attributeLabel>Water Temperature</attributeLabel>
+          <attributeDefinition>Water temperature in Celsius, as reported by the authors</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Water Temperature">http://purl.dataone.org/odo/ECSO_00001227</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_doc">
+          <attributeName>DOC</attributeName>
+          <attributeLabel>Dissolved Organic Carbon</attributeLabel>
+          <attributeDefinition>DOC concentration in milligrams of carbon per liter as reported by the authors</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="dissolved organic carbon concentration in water">http://purl.dataone.org/odo/ECSO_00002143</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_ph">
+          <attributeName>PH</attributeName>
+          <attributeLabel>Waterbody pH</attributeLabel>
+          <attributeDefinition>Waterbody pH</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Water pH">http://purl.dataone.org/odo/ECSO_00001159</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_icefreedays">
+          <attributeName>ICEFREE.DAYS</attributeName>
+          <attributeLabel>Number of Icefree days</attributeLabel>
+          <attributeDefinition>Number of ice-free days for the lake as reported by the authors</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>nominalDay</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="days elapsed">http://purl.dataone.org/odo/ECSO_00002123</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_class">
+          <attributeName>CLASS</attributeName>
+          <attributeLabel>Lake landcover class</attributeLabel>
+          <attributeDefinition>BAWLD land cover class</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>LL</code>
+                    <definition>Large lake</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MGL</code>
+                    <definition>Midsize glacial/post-glacial lake</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MPL</code>
+                    <definition>Midsize peatland lake </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MYL</code>
+                    <definition>Midsize yedoma lake </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SGL</code>
+                    <definition>Small glacial/post-glacial lake </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SPL</code>
+                    <definition>Small peatland lake </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SYL</code>
+                    <definition>Small yedoma lake </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="lake classification">http://purl.dataone.org/odo/ECSO_00002742</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>SIZE</attributeName>
+          <attributeLabel>Binned land cover class size for each lake</attributeLabel>
+          <attributeDefinition>BAWLD land cover lake size in three categories based on lake surface area in kilometers squared</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>S</code>
+                    <definition>Small: surface area less than 0.1 kilometers squared </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>M</code>
+                    <definition>Midsize: surface area between 0.1 and 10 kilometers squared </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>L</code>
+                    <definition>Large: surface area greater than 10 kilometers squared</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_type">
+          <attributeName>TYPE</attributeName>
+          <attributeLabel>Landcover class type only</attributeLabel>
+          <attributeDefinition>BAWLD land cover- lake origin type only</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>G</code>
+                    <definition>Glacial/post-glacial or organic poor/other</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>P</code>
+                    <definition>Peat or organic-rich </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Yedoma </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="type of land cover">http://purl.dataone.org/odo/ECSO_00002664</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_cdpcpan">
+          <attributeName>CD_Pcp_An</attributeName>
+          <attributeLabel>Mean annual precipitation (gridded)</attributeLabel>
+          <attributeDefinition>Gridded mean annual precipitation in millimeters per year from WorldClim2- http://www.worldclim.com/version2</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>millimetersPerYear</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Precipitation Rate">http://purl.dataone.org/odo/ECSO_00001162</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_biome">
+          <attributeName>BIOME</attributeName>
+          <attributeLabel>Biome</attributeLabel>
+          <attributeDefinition>Biome as defined by Olson et al. 2001 - https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>11</code>
+                    <definition>Tundra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>Boreal </definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="type of biome">http://purl.dataone.org/odo/ECSO_00002727</valueURI>
+          </annotation>
+        </attribute>
+        <attribute id="entity_aquatic_attribute_gridt">
+          <attributeName>GRID_T</attributeName>
+          <attributeLabel>Mean annual temperature (gridded)</attributeLabel>
+          <attributeDefinition>Gridded (0.5 by 0.5 degree) mean annual temperature in Celsius from WorldClim2- http://www.worldclim.com/version2</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+          <annotation>
+            <propertyURI label="contains measurements of type">http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType</propertyURI>
+            <valueURI label="Temperature Measurement Type">http://purl.dataone.org/odo/ECSO_00001104</valueURI>
+          </annotation>
+        </attribute>
+        <attribute>
+          <attributeName>NOTES</attributeName>
+          <attributeLabel>Notes</attributeLabel>
+          <attributeDefinition>Miscellaneous notes on the data</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>-</code>
+            <codeExplanation>Data that was not provided by the study. Either it was not measured by those authors or it was not available in the paper or supplemental.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="cNs8Tmb6R1Vs7At8V7AUty01akWTlx">
+          <attributeName>DOI</attributeName>
+          <attributeLabel>Digital Object Identifier</attributeLabel>
+          <attributeDefinition>DOI link to the article in which the data was extract from.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Any text</definition>
+                  <pattern>*</pattern>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="nominalMonth" name="nominalMonth" unitType="time">
+          <description>one month in a nominalYear</description>
+        </unit>
+        <unit id="millimetersPerYear" multiplierToSI="0.0000000000317098" name="millimetersPerYear" parentSI="meterPerSecond" unitType="speed">
+          <description>millimeters per year</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

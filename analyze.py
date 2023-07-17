@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
+import seaborn as sns
 
 
 # Process
@@ -22,6 +23,8 @@ from datetime import datetime
 
 
 #Fluxnet
+sns.set(rc={'figure.figsize':(24,24)})
+
 fluxnet_ch4_file_locations = ["Fluxnet\FLX_FI-Hyy_FLUXNET-CH4_2016-2016_1-1","Fluxnet\FLX_FI-Lom_FLUXNET-CH4_2006-2010_1-1","Fluxnet\FLX_FI-Si2_FLUXNET-CH4_2012-2016_1-1",
                                 "Fluxnet\FLX_FI-Sii_FLUXNET-CH4_2013-2018_1-1", "Fluxnet\FLX_RU-Che_FLUXNET-CH4_2014-2016_1-1", "Fluxnet\FLX_RU-Cok_FLUXNET-CH4_2008-2016_1-1",
                                 "Fluxnet\FLX_RU-Vrk_FLUXNET-CH4_2008-2008_1-1","Fluxnet\FLX_SE-Deg_FLUXNET-CH4_2014-2018_1-1","Fluxnet\FLX_SE-St1_FLUXNET-CH4_2012-2014_1-1",
@@ -74,7 +77,7 @@ class Fluxnet_db:
             # print(list(value.columns))
 
 
-            for header in (list(value.columns))[2:]:
+            for header in (list(value.columns))[1:]:
                 columns[header] = station+ '_'+header
             self.HH_df[attr] = value.rename(columns=columns)
 
@@ -86,7 +89,7 @@ class Fluxnet_db:
             # print(list(value.columns))
 
 
-            for header in (list(value.columns))[2:]:
+            for header in (list(value.columns))[1:]:
                 columns[header] = station+ '_'+header
             self.DD_df[attr] = value.rename(columns=columns)
 
@@ -105,34 +108,46 @@ class Fluxnet_db:
     #     return final_df
 
 
-    def flux_aggregate():
+    def flux_aggregate(self):
+        counter = 0
         for attr, value in self.HH_df.items():
-            # value = df.drop((list(value.columns))[0], axis='columns')
+            value = value.drop((list(value.columns))[0], axis='columns')
             if counter == 0:
                 self.aggregate = value
+                counter = 69
             else:
-                self.aggregate = self.aggregate.merge(value, how= "outer", right_index = True, on = self.aggregate.index ) 
+                self.aggregate = self.aggregate.merge(value, how= "outer",  on = 'TIMESTAMP_START') 
+                # self.aggregate = self.aggregate.merge(value, how= "outer", right_index= True,left_on='timestamp' ) 
+    def flux_correlations(self):
+        for attr, value in self.HH_df.items():
+            
+            mapa = (sns.heatmap(value.corr(numeric_only=True), annot=False )).get_figure()
+            mapa.savefig("Fluxnet\correlation_images\\"+attr+".png")
+            mapa.clf()
+            print(attr+" Figure generated")
+            # if counter == 0:
+            #     self.aggregate = value
+            #     counter = 69
+            # else:
+            #     self.aggregate = self.aggregate.merge(value, how= "outer",  on = 'TIMESTAMP_START') 
+                # self.aggregate = self.aggregate.merge(value, how= "outer", right_index= True,left_on='timestamp' ) 
             
 # need full outer join!!
 
-
-
             # print(value.columns)
             # print(list(value.columns))
-
-
-        for header in (list(value.columns))[2:]:
-                columns[header] = station+ '_'+header
-        self.HH_df[attr] = value.rename(columns=columns)
 
 
 
 # gfg_csv_data = df.to_csv('GfG.csv', index = True)
     def save_dfs_as_csv(self):
         for attr, value in self.HH_df.items():
-            value.to_csv((attr+"_HH.csv"))
+            value.to_csv(("Fluxnet\processed_csv\\"+attr+"_HH.csv"))
         for attr, value in self.DD_df.items():
-            value.to_csv((attr+"_DD.csv"))
+            value.to_csv(("Fluxnet\processed_csv\\"+attr+"_DD.csv"))
+
+    def agg_to_csv(self):
+        self.aggregate.to_csv("Big_Boi.csv")
 
 
 
@@ -322,6 +337,21 @@ Fluxnet_db.imprint_identity_across_all_dfs()
 Fluxnet_db.HH_df["FI-Hyy"].info()
 
 Fluxnet_db.HH_df["FI-Hyy"].head()
+
+# Fluxnet_db.save_dfs_as_csv()
+
+Fluxnet_db.flux_correlations()
+# Fluxnet_db.flux_aggregate()
+
+
+# Fluxnet_db.aggregate.info()
+
+# Fluxnet_db.agg_to_csv()
+
+# Fluxnet_db.aggregate.corr()
+
+
+
 
 # Fluxnet_db.save_dfs_as_csv()
 
