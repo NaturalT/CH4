@@ -14,7 +14,10 @@
 
 
 
-
+Fluxnet_db.HH_df["FI-Hyy"][["ecotype", "coordinates(lat,long)"]].info()
+db = Fluxnet_db.HH_df["FI-Hyy"][["ecotype", "TIMESTAMP_START"]]
+db.info()
+ind  = pd.MultiIndex.from_frame(db) # , names=['Tower', 'Sensor', 'Direction']
 
 
 

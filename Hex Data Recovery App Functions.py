@@ -429,3 +429,36 @@ def final_recovery_extraction(dataframe):
             dataframe.drop(col,inplace = True, axis =1)
     return dataframe
         # print('processing...')
+
+def construct_dash_dash(Dict, dash_inputs, exclude, data_recovery_span,indexi, recovery_clause):
+    dict_keys = extract_from_sensor(Grand_Dict,'full_name')
+    dash  = pandas.DataFrame()
+    startdate = ''
+    for span in data_recovery_span:
+        recovery_name  = f"_{span}_day_recovery"
+        temp_2 = []
+        for sensor in dict_keys:
+            if len(Dict[sensor].data_frame) == 0:
+                temp_2.append(float("Nan"))
+            else:
+                column = sensor + recovery_name
+                # temp_2.append(str( Dict[sensor].data_frame.index[0] )[:10:] +": " + str((Dict[sensor].data_frame[column][0:144].sum()/144)))
+                temp_2.append((Dict[sensor].data_frame[column][0:144].sum()/144))
+                startdate = str(Dict[sensor].data_frame.index[0] )[:10:]
+
+        dash[recovery_name] = temp_2
+
+    for metric in dash_inputs:
+        dash[metric] = extract_from_sensor(Grand_Dict,metric)
+
+    cols = list(dash)
+    filtered = filter(lambda col: col not in indexi , cols)
+
+
+    ind  = pandas.MultiIndex.from_frame(dash[indexi]) # , names=['Tower', 'Sensor', 'Direction']
+
+    # dash = dash.pivot(index= index, columns = columns)
+
+    dash.index =ind
+
+    dash = dash[filtered]

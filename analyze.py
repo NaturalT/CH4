@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 import seaborn as sns
+from IPython.display import display
+from tabulate import tabulate
 
 
 # Process
@@ -114,6 +116,56 @@ class Fluxnet_db:
     #         final_df = final_df.merge(Dict[sensors[i]].data_frame, how ='outer',right_index= True,left_on='timestamp')
     #         # print('processing...')
     #     return final_df
+    def flux_add_metadata(self):
+        for attr, value in self.HH_df.items():
+            station = attr
+            stat_meta = fluxnet_station_info[(fluxnet_station_info["SITE_ID"] == station)]
+            # print(stat_meta["SITE_ID"].item())
+            self.HH_df[attr]["loc_name"] = str(stat_meta["SITE_ID"].item())
+            self.HH_df[attr]["ecotype"] = str(stat_meta["SITE_CLASSIFICATION"].item())
+            self.HH_df[attr]["coordinates(lat,long)"] = (str(stat_meta["LAT"].item())+ ","+ str(stat_meta["LON"].item())) #* len(self.HH_df[attr])
+            # self.HH_df[attr]["coordinates(lat,long)"] = [tuple([stat_meta["LAT"], stat_meta["LON"]])] * len(self.HH_df[attr])
+
+            self.HH_df[attr]["dom_veg"] =  str(stat_meta["DOM_VEG"].item())
+
+        for attr, value in self.DD_df.items():
+            station = attr
+            stat_meta = fluxnet_station_info[(fluxnet_station_info["SITE_ID"] == station)]
+            self.DD_df[attr]["loc_name"] = str(stat_meta["SITE_ID"].item())
+            self.DD_df[attr]["ecotype"] = str(stat_meta["SITE_CLASSIFICATION"].item())
+            self.DD_df[attr]["coordinates(lat,long)"] = (str(stat_meta["LAT"].item())+ ","+ str(stat_meta["LON"].item())) #* len(self.DD_df[attr])
+            self.DD_df[attr]["dom_veg"] =  str(stat_meta["DOM_VEG"].item())
+
+    def flux_reindex(self,indexi):
+            
+            for attr, value in self.HH_df.items():
+                indexi.append("TIMESTAMP_START")
+                # self.HH_df[attr][indexi].info()
+                print(indexi)
+
+                ind  = pd.MultiIndex.from_frame(self.HH_df[attr][indexi]) # , names=['Tower', 'Sensor', 'Direction']
+
+                self.HH_df[attr].index =ind
+                print(attr + ' reindexed')
+                indexi.pop()
+
+            for attr, value in self.DD_df.items():
+                indexi.append("TIMESTAMP_START")
+                print(indexi)
+
+                ind  = pd.MultiIndex.from_frame(self.DD_df[attr][indexi]) # , names=['Tower', 'Sensor', 'Direction']
+
+                self.DD_df[attr].index =ind
+
+                print(attr + ' reindexed')
+                indexi.pop()
+
+    def flux_display(self,db):
+        print(db.index)
+
+
+
+
 
 
     def flux_aggregate(self):
@@ -126,6 +178,7 @@ class Fluxnet_db:
             else:
                 self.aggregate = self.aggregate.merge(value, how= "outer",  on = 'TIMESTAMP_START') 
                 # self.aggregate = self.aggregate.merge(value, how= "outer", right_index= True,left_on='timestamp' ) 
+            
     def flux_correlations(self):
         for attr, value in self.HH_df.items():
             
@@ -177,7 +230,7 @@ def fluxnet_dataframe_gather(location_list):
 
 #Fluxnet
 
-# fluxnet_dataframe_gather(fluxnet_ch4_file_locations)               hEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+fluxnet_dataframe_gather(fluxnet_ch4_file_locations)               #hEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 
 # Fluxnet_db.HH_df["FI-Hyy"].info()
 
@@ -187,33 +240,33 @@ def fluxnet_dataframe_gather(location_list):
 #in, data with misc header variables
 #out, data with standardized header variables
 
-header_dict = {"TIMESTAMP_START" : "TIMESTAMP_START",
-               "TIMESTAMP_END" : "TIMESTAMP_END",
-               "SW_IN" : "shortwave_in",
-               "SW_OUT" : "shortwave_out",
-               "LW_IN" : "longwave_in",
-               "LW_OUT" : "longwave_out",
-               "PPFD_IN" : "photosynthetic_photon_flux_density_in",
-               "PPFD_OUT" : "photosynthetic_photon_flux_density_out",
-               "NETRAD" : "net_radiation",
-               "USTAR" : "friction_velo",
-               "WD" : "wind_dir",
-               "WS" : "wind_spd",
-               "LE" : "latent_heat_turbulent_flux",
-               "PA" : "atmos_pressure",
-               "TA" : "air_temp",
-               "VPD" : "vapor_pressure_deficit",
-               "RH" : "relative_humidity",
-               "NEE" : "net_ecosystem_exchange",
-               "GPP" : "gross_primary_productivity",
-               "RECO" : "ecosystem_respiration",
-               "FCH4" : "ch4_turbulent_flux",
-               "TS" : "soil_temp",
-               "WTD" : "water_table_depth",
-               "SWC" : "soil_water_content",
-               "G" : "soil_heat_flux",
-               "H" : "sensible_heat_turbulent_flux",
-               "P" : "precipitation",
+header_dict = {"TIMESTAMP_START" :  "TIMESTAMP_START",
+               "TIMESTAMP_END" :    "TIMESTAMP_END",
+               "SW_IN" :            "shortwave_in",
+               "SW_OUT" :           "shortwave_out",
+               "LW_IN" :            "longwave_in",
+               "LW_OUT" :           "longwave_out",
+               "PPFD_IN" :          "photosynthetic_photon_flux_density_in",
+               "PPFD_OUT" :         "photosynthetic_photon_flux_density_out",
+               "NETRAD" :           "net_radiation",
+               "USTAR" :            "friction_velo",
+               "WD" :               "wind_dir",
+               "WS" :               "wind_spd",
+               "LE" :               "latent_heat_turbulent_flux",
+               "PA" :               "atmos_pressure",
+               "TA" :               "air_temp",
+               "VPD" :              "vapor_pressure_deficit",
+               "RH" :               "relative_humidity",
+               "NEE" :              "net_ecosystem_exchange",
+               "GPP" :              "gross_primary_productivity",
+               "RECO" :             "ecosystem_respiration",
+               "FCH4" :             "ch4_turbulent_flux",
+               "TS" :               "soil_temp",
+               "WTD" :              "water_table_depth",
+               "SWC" :              "soil_water_content",
+               "G" :                "soil_heat_flux",
+               "H" :                "sensible_heat_turbulent_flux",
+               "P" :                "precipitation",
                 }
 
 
@@ -331,20 +384,67 @@ def format_time_and_set_time_index(dataframe):
 
     return dataframe
 
+
+def format_time(dataframe):
+    def int_to_dt(inty):
+        str_ver = str(inty)
+        if len(str_ver) == 12:
+            str_ver = str_ver[:4] + "-" + str_ver[4:6]+ "-" +str_ver[6:8] + "T"+str_ver[8:10]+":"+ str_ver[10:]
+        if len(str_ver) == 8:
+            str_ver = str_ver[:4] + "-" + str_ver[4:6]+ "-" +str_ver[6:] 
+        return(str_ver)
+        
+
+    dataframe[list(dataframe.columns)[0]] = dataframe[list(dataframe.columns)[0]].apply(int_to_dt)
+    dataframe[list(dataframe.columns)[0]] = dataframe[list(dataframe.columns)[0]].apply(datetime.fromisoformat)
+
+    # dataframe[list(dataframe.columns)[0]] = datetime.fromisoformat(    dataframe[list(dataframe.columns)[0]]  )
+
+
+
+    dataframe[list(dataframe.columns)[1]] = dataframe[list(dataframe.columns)[1]].apply(int_to_dt)
+    dataframe[list(dataframe.columns)[1]] = dataframe[list(dataframe.columns)[1]].apply(datetime.fromisoformat)
+    # dataframe = dataframe.reindex(index= dataframe[list(dataframe.columns)[0]])
+    # dataframe = dataframe.set_index(list(dataframe.columns)[0])
+
+
+    return dataframe
     # dataframe[list(dataframe.columns)[1]] = datetime.fromisoformat(    dataframe[list(dataframe.columns)[1]]   )
 
 
 
 
-                    # Fluxnet_db.apply_across_all_dfs(flux_format)
+Fluxnet_db.apply_across_all_dfs(flux_format)
 
-                    # Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
+Fluxnet_db.apply_across_all_dfs(format_time)
 
-                    # Fluxnet_db.imprint_identity_across_all_dfs()
+Fluxnet_db.flux_add_metadata()
+# Fluxnet_db.imprint_identity_across_all_dfs()
+Fluxnet_db.DD_df["RU-Vrk"].info()
 
-                    # Fluxnet_db.HH_df["FI-Hyy"].info()
 
-                    # Fluxnet_db.HH_df["FI-Hyy"].head()
+# self.HH_df[attr][indexi].info()
+
+
+Fluxnet_db.flux_reindex(["ecotype", "coordinates(lat,long)"])
+Fluxnet_db.flux_display(Fluxnet_db.HH_df["RU-Vrk"])
+
+
+
+# indexi = ["ecotype", "coordinates(lat,long)", "TIMESTAMP_START"]
+# # Fluxnet_db.HH_df["FI-Hyy"][indexi].info()
+# db = Fluxnet_db.HH_df["FI-Hyy"]
+# db_ind = Fluxnet_db.HH_df["FI-Hyy"][indexi]
+# # db.info()
+# ind  = pd.MultiIndex.from_frame(db_ind) # , names=['Tower', 'Sensor', 'Direction']
+# db.index = ind
+
+# db.info()
+# db.to_csv(("Fluxnet\processed_csv\\"+"TEST"+"_HH.csv"))
+# Fluxnet_db.HH_df["FI-Hyy"].info()
+
+# print(fluxnet_station_info[(fluxnet_station_info["SITE_ID"] == "FI-Hyy")]["SITE_NAME"])
+# Fluxnet_db.HH_df["FI-Hyy"].head()
 
 # Fluxnet_db.save_dfs_as_csv()
 
@@ -361,7 +461,7 @@ def format_time_and_set_time_index(dataframe):
 
 
 
-# Fluxnet_db.save_dfs_as_csv()
+Fluxnet_db.save_dfs_as_csv()
 
     
             
