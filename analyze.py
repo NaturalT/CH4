@@ -36,6 +36,14 @@ fluxnet_ch4_file_locations = ["Fluxnet\FLX_FI-Hyy_FLUXNET-CH4_2016-2016_1-1","Fl
                             ]
 
 
+fluxnet_station_info =   pd.read_csv("Fluxnet/FLX_AA-Flx_CH4-META_20201112135337801132.csv")
+
+fluxnet_station_info.info()
+
+
+
+
+
 def flux_prep(filename,H_or_D):
     index_insert = filename.find("CH4_")
     start_point = filename.find("Fluxnet\\")
@@ -169,7 +177,7 @@ def fluxnet_dataframe_gather(location_list):
 
 #Fluxnet
 
-fluxnet_dataframe_gather(fluxnet_ch4_file_locations)
+# fluxnet_dataframe_gather(fluxnet_ch4_file_locations)               hEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 
 # Fluxnet_db.HH_df["FI-Hyy"].info()
 
@@ -328,19 +336,19 @@ def format_time_and_set_time_index(dataframe):
 
 
 
-Fluxnet_db.apply_across_all_dfs(flux_format)
+                    # Fluxnet_db.apply_across_all_dfs(flux_format)
 
-Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
+                    # Fluxnet_db.apply_across_all_dfs(format_time_and_set_time_index)
 
-Fluxnet_db.imprint_identity_across_all_dfs()
+                    # Fluxnet_db.imprint_identity_across_all_dfs()
 
-Fluxnet_db.HH_df["FI-Hyy"].info()
+                    # Fluxnet_db.HH_df["FI-Hyy"].info()
 
-Fluxnet_db.HH_df["FI-Hyy"].head()
+                    # Fluxnet_db.HH_df["FI-Hyy"].head()
 
 # Fluxnet_db.save_dfs_as_csv()
 
-Fluxnet_db.flux_correlations()
+# Fluxnet_db.flux_correlations()
 # Fluxnet_db.flux_aggregate()
 
 
