@@ -4,6 +4,10 @@ from datetime import datetime
 import seaborn as sns
 from IPython.display import display
 from tabulate import tabulate
+import geopandas
+from geodatasets import get_path
+from shapely import wkt
+
 
 
 # Process
@@ -123,7 +127,7 @@ class Fluxnet_db:
             # print(stat_meta["SITE_ID"].item())
             self.HH_df[attr]["loc_name"] = str(stat_meta["SITE_ID"].item())
             self.HH_df[attr]["ecotype"] = str(stat_meta["SITE_CLASSIFICATION"].item())
-            self.HH_df[attr]["coordinates(lat,long)"] = (str(stat_meta["LAT"].item())+ ","+ str(stat_meta["LON"].item())) #* len(self.HH_df[attr])
+            self.HH_df[attr]["coordinates"] = "POINT("+(str(stat_meta["LAT"].item())+ " "+ str(stat_meta["LON"].item()))+")" #* len(self.HH_df[attr])
             # self.HH_df[attr]["coordinates(lat,long)"] = [tuple([stat_meta["LAT"], stat_meta["LON"]])] * len(self.HH_df[attr])
 
             self.HH_df[attr]["dom_veg"] =  str(stat_meta["DOM_VEG"].item())
@@ -133,7 +137,7 @@ class Fluxnet_db:
             stat_meta = fluxnet_station_info[(fluxnet_station_info["SITE_ID"] == station)]
             self.DD_df[attr]["loc_name"] = str(stat_meta["SITE_ID"].item())
             self.DD_df[attr]["ecotype"] = str(stat_meta["SITE_CLASSIFICATION"].item())
-            self.DD_df[attr]["coordinates(lat,long)"] = (str(stat_meta["LAT"].item())+ ","+ str(stat_meta["LON"].item())) #* len(self.DD_df[attr])
+            self.DD_df[attr]["coordinates"] = "POINT("+(str(stat_meta["LAT"].item())+ " "+ str(stat_meta["LON"].item()))+")" #* len(self.DD_df[attr]) THIS IS CALLED WKT Format
             self.DD_df[attr]["dom_veg"] =  str(stat_meta["DOM_VEG"].item())
 
     def flux_reindex(self,indexi):
@@ -168,7 +172,7 @@ class Fluxnet_db:
 
 
 
-    def flux_aggregate(self):
+    def flux_aggregate_merge(self):
         counter = 0
         for attr, value in self.HH_df.items():
             value = value.drop((list(value.columns))[0], axis='columns')
@@ -178,7 +182,24 @@ class Fluxnet_db:
             else:
                 self.aggregate = self.aggregate.merge(value, how= "outer",  on = 'TIMESTAMP_START') 
                 # self.aggregate = self.aggregate.merge(value, how= "outer", right_index= True,left_on='timestamp' ) 
-            
+    def flux_aggregate_concat(self):
+        counter = 0
+        for attr, value in self.HH_df.items():
+            value = value.drop((list(value.columns))[0], axis='columns')
+            if counter == 0:
+                self.aggregate = value
+                counter = 69
+            else:
+                self.aggregate = pd.concat([self.aggregate, value], axis = 0) 
+                # self.aggregate = self.aggregate.merge(value, how= "outer", right_index= True,left_on='timestamp' ) 
+    def flux_agg_to_geo(self):
+        self.aggregate["coordinates"] = geopandas.GeoSeries.from_wkt(self.aggregate["coordinates"])
+        print(self.aggregate.head())
+        self.aggregate = geopandas.GeoDataFrame(self.aggregate, geometry="coordinates")
+        print(self.aggregate.head())
+
+
+
     def flux_correlations(self):
         for attr, value in self.HH_df.items():
             
@@ -230,7 +251,7 @@ def fluxnet_dataframe_gather(location_list):
 
 #Fluxnet
 
-fluxnet_dataframe_gather(fluxnet_ch4_file_locations)               #hEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+# fluxnet_dataframe_gather(fluxnet_ch4_file_locations)               #hEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 
 # Fluxnet_db.HH_df["FI-Hyy"].info()
 
@@ -414,20 +435,20 @@ def format_time(dataframe):
 
 
 
-Fluxnet_db.apply_across_all_dfs(flux_format)
+            # Fluxnet_db.apply_across_all_dfs(flux_format)
 
-Fluxnet_db.apply_across_all_dfs(format_time)
+            # Fluxnet_db.apply_across_all_dfs(format_time)
 
-Fluxnet_db.flux_add_metadata()
+            # Fluxnet_db.flux_add_metadata()
 # Fluxnet_db.imprint_identity_across_all_dfs()
-Fluxnet_db.DD_df["RU-Vrk"].info()
+# Fluxnet_db.DD_df["RU-Vrk"].info()
 
 
 # self.HH_df[attr][indexi].info()
 
 
-Fluxnet_db.flux_reindex(["ecotype", "coordinates(lat,long)"])
-Fluxnet_db.flux_display(Fluxnet_db.HH_df["RU-Vrk"])
+                # Fluxnet_db.flux_reindex(["ecotype", "coordinates"])
+# Fluxnet_db.flux_display(Fluxnet_db.HH_df["RU-Vrk"])
 
 
 
@@ -449,10 +470,10 @@ Fluxnet_db.flux_display(Fluxnet_db.HH_df["RU-Vrk"])
 # Fluxnet_db.save_dfs_as_csv()
 
 # Fluxnet_db.flux_correlations()
-# Fluxnet_db.flux_aggregate()
+        # Fluxnet_db.flux_aggregate_concat()
 
-
-# Fluxnet_db.aggregate.info()
+        # Fluxnet_db.flux_agg_to_geo()
+        # Fluxnet_db.aggregate.info()
 
 # Fluxnet_db.agg_to_csv()
 
@@ -461,12 +482,25 @@ Fluxnet_db.flux_display(Fluxnet_db.HH_df["RU-Vrk"])
 
 
 
-Fluxnet_db.save_dfs_as_csv()
+# Fluxnet_db.save_dfs_as_csv()
 
     
             
                 
+circum_arctic = geopandas.read_file("shapefiles\ARCTIC230721.shp")
+# world_shp = geopandas.read_file("shapefiles\world_countries_2020.shp")
+# circum_arctic = geopandas.read_file("shapefiles\ARPA_polygon.shx")
 
 
+# print(world_shp.columns.values)
 
+print(circum_arctic.columns.values)
 
+# self.aggregate = self.aggregate.merge(value, how= "outer",  on = 'TIMESTAMP_START') 
+
+# bounded = circum_arctic.merge(world_shp, how = "inner", on = "geometry")
+# # plt.figure()
+circum_arctic.plot()
+# bounded.plot()
+
+plt.show()
